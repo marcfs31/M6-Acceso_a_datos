@@ -1,7 +1,7 @@
 import java.io.*;
-public class Ejemplo_Streams2 {
+public class Ejemplo2_Streams2 {
 	public static void main (String [] args) throws IOException {
-		File fichero = new File("FicheroTexto.txt");
+		File fichero = new File("test.txt");
 		FileWriter fic = new FileWriter (fichero);
 		String cadena = " Esto es una prueba con FileWriter";
 		char [] cad = cadena.toCharArray () ;
