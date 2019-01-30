@@ -1,10 +1,10 @@
 import java.sql.*;
 
-public class EjemploDatabaseMetadata {
+public class Ejercicio1_jdbc2_1 {
 	public static void main(String[] args) {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo", "austria", "austria");
+			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo", "root", "austria");
 			DatabaseMetaData dbmd = conexion.getMetaData();
 			ResultSet resul = null;
 			String nombre = dbmd.getDatabaseProductName();
