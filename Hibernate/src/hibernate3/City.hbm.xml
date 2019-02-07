@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 07-Feb-2019 23:03:34 by Hibernate Tools 5.2.11.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="world" dynamic-insert="false" dynamic-update="false" mutable="true" name="hibernate3.City" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="city">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="hibernate3.Country" embed-xml="true" fetch="select" insert="true" name="country" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column length="3" name="CountryCode" not-null="true"/>
+        </many-to-one>
+        <property generated="never" lazy="false" name="name" optimistic-lock="true" type="string" unique="false">
+            <column length="35" name="Name" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="district" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="District" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="population" optimistic-lock="true" type="int" unique="false">
+            <column name="Population" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

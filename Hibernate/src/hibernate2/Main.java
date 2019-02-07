@@ -1,4 +1,4 @@
-package Hibernate_2;
+package hibernate2;
 
 import primero.*;
 
