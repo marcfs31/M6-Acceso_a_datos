@@ -31,9 +31,6 @@ public class Ejercicio3_jdbc2_2 {
 			
 			System.out.println(sql);
 			
-			if (salario>0) {
-				
-			}
 			sentencia.executeUpdate(sql);
 			ResultSet result2 = sentencia.executeQuery(sql2);
 			
