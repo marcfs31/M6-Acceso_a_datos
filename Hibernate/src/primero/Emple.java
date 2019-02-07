@@ -1,5 +1,5 @@
 package primero;
-// Generated 06-Feb-2019 23:40:45 by Hibernate Tools 5.2.11.Final
+// Generated 07-Feb-2019 22:46:35 by Hibernate Tools 5.2.11.Final
 
 import java.util.Date;
 

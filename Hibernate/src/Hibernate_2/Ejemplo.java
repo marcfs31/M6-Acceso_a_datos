@@ -1,3 +1,5 @@
+package Hibernate_2;
+
 import primero.*;
 import primero.HibernateUtil;
 
@@ -5,7 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-public class Main {
+public class Ejemplo {
 	public static void main(String[] args) {
 		//En primer lugar se obtiene la sesión creada por el Singleton.
 		SessionFactory sesion = HibernateUtil.getSessionFactory();
