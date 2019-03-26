@@ -13,7 +13,7 @@ public class ProblemaXQJ1_4 {
 			XQConnection conn = server.getConnection();
 			XQPreparedExpression consulta;
 			XQResultSequence resultado;
-			consulta = conn.prepareExpression("for $emple in doc('nueva/empleados.xml')//EMP_ROW[DEPT_NO = '10'] return $emple");
+			consulta = conn.prepareExpression("for $emple in doc('nueva/empleados.xml')//EMP_ROW[DEPT_NO = 10] return $emple");
 			resultado = consulta.executeQuery();
 			while (resultado.next()) {
 				System.out.println(resultado.getItemAsString(null));

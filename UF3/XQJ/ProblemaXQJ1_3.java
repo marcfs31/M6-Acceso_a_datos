@@ -13,7 +13,7 @@ public class ProblemaXQJ1_3 {
 			XQConnection conn = server.getConnection();
 			XQPreparedExpression consulta;
 			XQResultSequence resultado;
-			consulta = conn.prepareExpression("for $precio in count(doc('nueva/productos.xml')//produc[precio > '50']) return $precio");
+			consulta = conn.prepareExpression("for $precio in count(doc('nueva/productos.xml')//produc[precio > 50]) return $precio");
 			resultado = consulta.executeQuery();
 			while (resultado.next()) {
 				System.out.println(resultado.getItemAsString(null));
