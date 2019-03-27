@@ -30,9 +30,9 @@ public class ProblemaXQJ2_1 {
 			resultado = consulta.executeQuery();
 			
 			if (resultado.next() != false) {
-				while (resultado.next()) {
+				do {
 					System.out.println(resultado.getItemAsString(null));
-				}
+				} while (resultado.next());
 			} else {
 				System.out.println("Error: Departamento inexistente");
 			}

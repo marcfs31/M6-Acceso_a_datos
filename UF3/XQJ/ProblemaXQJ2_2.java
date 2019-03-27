@@ -49,10 +49,10 @@ public class ProblemaXQJ2_2 {
 			
 			bWriter.write("<?xml version='1.0' encoding='UTF-8'?>");
 			if (resultado.next() != false) {
-				while (resultado.next()) {
+				do {
 					bWriter.newLine();
 					bWriter.write(resultado.getItemAsString(null));
-				}
+				} while (resultado.next() );
 			} else {
 				System.out.println("Error");
 			}
