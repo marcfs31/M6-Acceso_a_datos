@@ -1,6 +1,7 @@
-package sesion2;
+package sesion3;
 
-import java.beans.*;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
